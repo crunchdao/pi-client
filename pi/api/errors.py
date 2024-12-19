@@ -33,6 +33,14 @@ class DiscordUserNotFoundError(ApiError):
         self.properties = kwargs
 
 
+class QuestionNotFoundError(ApiError):
+
+    def __init__(self, message: str, question_id: int):
+        super().__init__(message)
+
+        self.question_id = question_id
+
+
 class GenericApiError(ApiError):
 
     def __init__(self, code: str, message: str, **kwargs):

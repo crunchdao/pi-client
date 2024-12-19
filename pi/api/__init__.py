@@ -7,6 +7,7 @@ from .errors import (
     CurrentUserNotFoundError,
     DailyQuestionQuotaReachedError,
     DiscordUserNotFoundError,
+    QuestionNotFoundError,
     GenericApiError,
 )
 

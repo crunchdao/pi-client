@@ -50,6 +50,7 @@ class Client:
         return response.json()
 
     def _map_error(self, content: typing.Dict[str, typing.Any]):
+        print(content)
         code = content.pop("code", None)
         message = content.pop("message", None)
 
