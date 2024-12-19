@@ -1,6 +1,18 @@
-# pi-client
+# π Client
 
 A client for the Pi project.
+
+- [π Client](#π-client)
+- [Install](#install)
+- [Usage](#usage)
+  - [Endpoints](#endpoints)
+    - [Get Current User](#get-current-user)
+    - [List Datasources](#list-datasources)
+    - [Create a Question](#create-a-question)
+    - [List Questions](#list-questions)
+    - [Get Question](#get-question)
+    - [Get a Question's Timeseries](#get-a-questions-timeseries)
+  - [Handling Errors](#handling-errors)
 
 # Install
 
