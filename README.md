@@ -10,7 +10,7 @@ A client for the Pi project.
     - [List Datasources](#list-datasources)
     - [Create a Question](#create-a-question)
     - [List Questions](#list-questions)
-    - [Get Question](#get-question)
+    - [Get Question (by ID)](#get-question-by-id)
     - [Get a Question's Timeseries](#get-a-questions-timeseries)
   - [Handling Errors](#handling-errors)
 
@@ -87,12 +87,12 @@ questions: DataFrame = client.list_questions(
 )
 ```
 
-### Get Question
+### Get Question (by ID)
 
 ```python
 from pi.api import Question
 
-question: Question = client.get_question(123)
+question: Question = client.get_question_by_id(123)
 ```
 
 ### Get a Question's Timeseries

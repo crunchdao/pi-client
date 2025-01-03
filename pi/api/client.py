@@ -241,6 +241,8 @@ class Client:
 
         return Question.from_dict(content)
 
+    get_question_by_id = get_question
+
     def list_question_timeseries(
         self,
         question_id: int,
