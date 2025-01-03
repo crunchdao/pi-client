@@ -98,7 +98,7 @@ question: Question = client.get_question(123)
 ### Get a Question's Timeseries
 
 ```python
-from pi.api import Question
+from pi.api import Timeseries
 
 timeseriess: List[Timeseries] = client.list_question_timeseries(123)
 ```
