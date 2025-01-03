@@ -5,10 +5,11 @@ import typing
 
 import dataclasses_json
 import marshmallow
+import marshmallow.utils
 
 ISO8086 = dataclasses_json.config(
-    encoder=datetime.datetime.isoformat,
-    decoder=datetime.datetime.fromisoformat,
+    encoder=marshmallow.utils.isoformat,
+    decoder=marshmallow.utils.from_iso_datetime,
     mm_field=marshmallow.fields.DateTime(format='iso')
 )
 
