@@ -89,12 +89,6 @@ class Question:
         return self.status == QuestionStatus.COMPLETED
 
 
-class TimeseriesStrengh(enum.Enum):
-    WEAK = "WEAK"
-    MEDIUM = "MEDIUM"
-    STRONG = "STRONG"
-
-
 class TimeseriesType(enum.Enum):
     QUESTION = "QUESTION"
     CORRELATION = "CORRELATION"
@@ -145,7 +139,7 @@ class Timeseries:
     type: TimeseriesType
     title: str
     unit: typing.Optional[str]
-    strength: typing.Optional[TimeseriesStrengh]
+    strength: typing.Optional[str]
     y_axis_label: str
     correlation_type: typing.Optional[str]
     correlation: typing.Optional[float]
