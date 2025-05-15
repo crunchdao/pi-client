@@ -112,26 +112,15 @@ class Client:
         prompt: str,
         *,
         datasource_name: typing.Optional[str] = None,
-        discord_user_id: typing.Optional[str] = None,
         wait: typing.Union[bool | int] = False,
         refresh_interval=0.5,
     ) -> Question:
-        url = "/v1/questions"
-        extra_body = {}
-
-        if discord_user_id is not None:
-            url = "/v1/discord/questions"
-            extra_body = {
-                "discordUserId": discord_user_id,
-            }
-
         content = self._request(
             "POST",
-            url,
+            "/v1/questions",
             json={
                 "prompt": prompt,
                 "datasourceName": datasource_name,
-                **extra_body,
             }
         )
 
