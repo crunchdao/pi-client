@@ -77,11 +77,11 @@ class Question:
     status: QuestionStatus
     success: typing.Optional[bool]
     error: typing.Optional[str]
-    tags: typing.List[str]
+    tags: typing.Optional[typing.List[str]]
     uniqueness_score: typing.Optional[float]
     correlation_score: typing.Optional[float]
     rewarded_points: typing.Optional[float]
-    datasource: Datasource
+    datasource: typing.Optional[Datasource]
     created_at: datetime.datetime = dataclasses.field(metadata=ISO8086)
 
     @property
