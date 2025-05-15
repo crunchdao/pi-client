@@ -32,6 +32,9 @@ client = pi.api.Client()
 print(client.get_current_user())
 ```
 
+> [!NOTE]
+> [A notebook is available!](./examples/notebook.ipynb)
+
 ## Endpoints
 
 ### Get Current User
